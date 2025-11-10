@@ -39,13 +39,13 @@ describe('Suíte de Testes de Funcionalidades da Loja - SauceDemo', () => {
     cy.url().should('include', '/inventory.html');
   });
 
-  it('3. Deve adicionar um item ao carrinho', () => {
+  it('4. Deve adicionar um item ao carrinho', () => {
     cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click();    
     cy.get('[data-test="shopping-cart-link"]').should('have.text','1')
     cy.get('[data-test="remove-sauce-labs-backpack"]').should('be.visible');
   });
 
-  it('4. Deve remover um item do carrinho', () => {
+  it('5. Deve remover um item do carrinho', () => {
     cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click();    
     cy.get('[data-test="shopping-cart-link"]').should('have.text','1')
     cy.get('[data-test="remove-sauce-labs-backpack"]').should('be.visible');
@@ -56,7 +56,7 @@ describe('Suíte de Testes de Funcionalidades da Loja - SauceDemo', () => {
     cy.get('[data-test="item-4-title-link"] [data-test="inventory-item-name"]').should('not.exist');
   });
 
-  it('5. Deve ordenar os produtos por "Nome (Z a A)"', () => {
+  it('6. Deve ordenar os produtos por "Nome (Z a A)"', () => {
     cy.get('[data-test="product-sort-container"]').select('za');      
     cy.get('[data-test="item-3-title-link"] [data-test="inventory-item-name"]').click();
     cy.get('[data-test="inventory-item-name"]').should('have.text', 'Test.allTheThings() T-Shirt (Red)');
@@ -64,7 +64,7 @@ describe('Suíte de Testes de Funcionalidades da Loja - SauceDemo', () => {
 
   });
 
-it('6. Deve completar o fluxo de checkout com sucesso', () => {
+it('7. Deve completar o fluxo de checkout com sucesso', () => {
     cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click();    
     cy.get('[data-test="shopping-cart-link"]').click();
     cy.get('[data-test="checkout"]').click();

@@ -59,4 +59,4 @@ Para visualizá-lo:
 1.  Navegue até a pasta `cypress/reports/`.
 2.  Abra o arquivo **`index.html`** no seu navegador de preferência.
 
-O relatório é um arquivo HTML interativo que mostra todos os testes, o tempo de execução, quais passaram, quais falharam e (se configurado) screenshots das falhas.
+O relatório é um arquivo HTML interativo que mostra todos os testes, o tempo de execução e quais passaram
