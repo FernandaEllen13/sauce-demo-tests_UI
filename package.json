@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "cypress": "^15.6.0"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.0.0"
+  }
+}
